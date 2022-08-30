@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+  {% block head %}
+  {{ super() }}
+  <title>Cursos</title>
+  {% endblock %}
+
+
+  <body>
+    <!-- Herança do popup de status  -->
+    {% block popup %}
+    {{ super() }}
+    {% endblock %}
+
+    <!-- Herança da navbar -->
+    {% block header %}
+    {{ super() }}
+    <!-- Herança do botão do carrinho (tá bugado, então vai herdar junto com o block header)-->
+
+    {% endblock %}
+
+    {% block main %}
+    {{ super() }}
+    <div class="folder_cursos_css">
+      <h1 align="center">Selecione um curso para visualizar a grade curricular</h1>
+      {% for curso in cursos%}
+      <div class="cursos_css">
+        <a href="horario_curso/{{curso}}">{{curso}}</a>
+      </div>
+      {%endfor%}
+    </div>
+
+    {% endblock %}
+
+    <!-- Herança de informações de rodapé -->
+    {% block footer %}
+    {{ super() }}
+
+    {% endblock %}
+
+
+    <!-- Herança de scripts - global e pesquisar  -->
+    {% block scripts %}
+    {{ super() }}
+    {% endblock %}
+  </body>
+</html>
