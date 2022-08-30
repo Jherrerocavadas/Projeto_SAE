@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+  {% block head %}
+  {{ super() }}
+  <title>Disciplinas - {{cursos_disciplinas[curso]["Sigla"]}}</title>
+  {% endblock %}
+
+
+  <body>
+    <!-- Herança do popup de status  -->
+    {% block popup %}
+    {{ super() }}
+    {% endblock %}
+
+    <!-- Herança da navbar -->
+    {% block header %}
+    {{ super() }}
+    <!-- Herança do botão do carrinho (tá bugado, então vai herdar junto com o block header)-->
+
+    {% endblock %}
+
+    {% block main %}
+    {{ super() }}
+    <h1 align = "center">Disciplinas</h1>
+    <br>
+    <h2>1º Semestre</h2>
+    {% for Disciplina in cursos_disciplinas[curso]["1º Semestre"]%}
+    <p>{{Disciplina}}</p>
+    {%endfor%}
+    <h2>2º Semestre</h2>
+    {% for Disciplina in cursos_disciplinas[curso]["2º Semestre"]%}
+    <p>{{Disciplina}}</p>
+    {%endfor%}
+    <h2>3º Semestre</h2>
+    {% for Disciplina in cursos_disciplinas[curso]["3º Semestre"]%}
+    <p>{{Disciplina}}</p>
+    {%endfor%}
+    <h2>4º Semestre</h2>
+    {% for Disciplina in cursos_disciplinas[curso]["4º Semestre"]%}
+    <p>{{Disciplina}}</p>
+    {%endfor%}
+    <h2>5º Semestre</h2>
+    {% for Disciplina in cursos_disciplinas[curso]["5º Semestre"]%}
+    <p>{{Disciplina}}</p>
+    {%endfor%}
+    <h2>6º Semestre</h2>
+    {% for Disciplina in cursos_disciplinas[curso]["6º Semestre"]%}
+    <p>{{Disciplina}}</p>
+    {%endfor%}
+
+    {% endblock %}
+
+    <!-- Herança de informações de rodapé -->
+    {% block footer %}
+    {{ super() }}
+
+    {% endblock %}
+
+
+    <!-- Herança de scripts - global e pesquisar  -->
+    {% block scripts %}
+    {{ super() }}
+    {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,170 @@
+{
+  "Design de Mídias Digitais": {
+    "Sigla": "DMD",
+    "1º Semestre":{
+      "Matemática Discreta":[["Segunda", "Segunda", "Segunda", "Segunda"], ["7h40 - 8h30", "8h30 - 9h20", "9h30 - 10h20", "10h20 - 11h10"]],
+      "Administração Geral":[["Terça", "Terça", "Terça", "Terça"], ["7h40 - 8h30", "8h30 - 9h20", "9h30 - 10h20", "10h20 - 11h10"]],
+      "Tecnologia da Informação e Comunicação":[["Segunda", "Segunda"], ["12h10 - 13h00","12h10 - 13h00"]],
+      "Ingles I":[["Terça", "Terça"], ["11h20 - 12h10",  "12h10 - 13h00"]],
+      "Princípios de Marketing": [["Quarta","Quarta", "Quarta","Quarta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"]],
+      "Interpretação e Produção de textos":[["Quinta", "Quinta","Quinta", "Quinta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"]],
+      "Técnicas de Apresentação de Portfólio":[["Sexta", "Sexta", "Sexta", "Sexta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"]]
+    },
+    "2º Semestre":[
+      "Estatística",
+      "Pesquisa Mercadológica",
+      "Metodologia de Pesquisa Científico-Tecnológica",
+      "Projeto Integrador I",
+      "Ingles II",
+      "Algoritmo e Lógica de Programação",
+      "Gestão de Projetos"
+    ],
+    "3º Semestre":[
+      "Comunicação Visual",
+      "Comunicação Interna",
+      "Direito Empresarial e do Consumidor",
+      "Banco de dados",
+      "Ingles III",
+      "Plano de Marketing",
+      "Programação Orientada a Objetos",
+      "Design Digital"
+    ],
+    "4º Semestre":[
+      "Direito da Propriedade Intelectual",
+      "Experiência de Usuário",
+      "Criação de Websites",
+      "Projeto Integrador II",
+      "Ingles IV",
+      "Programação para Ambientes Multimídia I",
+      "Marketing Digital"
+    ],
+    "5º Semestre":[
+      "Gestão de Marcas",
+      "Comunicação em Mídias Digitais",
+      "Programação para Ambientes Multimídia II",
+      "Programação para Mobile I",
+      "Ingles V",
+      "Segurança no Desenvolvimento de Aplicações",
+      "Redes e Internet",
+      "Trabalho de Graduação em design de Mídias Digitais I"
+
+    ],
+    "6º Semestre":[
+      "Empreendedorismo e Inovação",
+      "Inteligência Artificial",
+      "Programação Mobile II",
+      "Ciência dos dados",
+      "Design Audiovisual",
+      "Tópicos Especiais em Sistemas de Mídias Digitais",
+      "Estágio Supervisionado em Design de Mídias Digitais",
+      "Trabalho de Graduação em design de Mídias Digitais II"
+    ]
+  },
+  "Jogos Digitais": {
+    "1º Semestre":[],
+    "2º Semestre":[],
+    "3º Semestre":[],
+    "4º Semestre":[],
+    "5º Semestre":[],
+    "6º Semestre":[]
+  },
+  "Análise e Desenvolvimento de Sistemas": {
+    "Sigla":"ADS",
+    "1º Semestre":[],
+    "2º Semestre":[],
+    "3º Semestre":[],
+    "4º Semestre":[],
+    "5º Semestre":[],
+    "6º Semestre":[]
+  },
+
+  "reffgghhjj": {
+    "Sigla":"TST",
+    "1º Semestre":["Materia1", "Materia2"],
+    "2º Semestre":["Materia1", "Materia2"],
+    "3º Semestre":["Materia1", "Materia2"],
+    "4º Semestre":["Materia1", "Materia2"],
+    "5º Semestre":["Materia1", "Materia2"],
+    "6º Semestre":["Materia1", "Materia2"]
+  },
+
+  "re": {
+    "Sigla":"TST",
+    "1º Semestre":["Materia1", "Materia2"],
+    "2º Semestre":["Materia1", "Materia2"],
+    "3º Semestre":["Materia1", "Materia2"],
+    "4º Semestre":["Materia1", "Materia2"],
+    "5º Semestre":["Materia1", "Materia2"],
+    "6º Semestre":["Materia1", "Materia2"]
+  },
+
+  "ref": {
+    "Sigla":"TST",
+    "1º Semestre":["Materia1", "Materia2"],
+    "2º Semestre":["Materia1", "Materia2"],
+    "3º Semestre":["Materia1", "Materia2"],
+    "4º Semestre":["Materia1", "Materia2"],
+    "5º Semestre":["Materia1", "Materia2"],
+    "6º Semestre":["Materia1", "Materia2"]
+  },
+
+  "reff": {
+    "Sigla":"TST",
+    "1º Semestre":["Materia1", "Materia2"],
+    "2º Semestre":["Materia1", "Materia2"],
+    "3º Semestre":["Materia1", "Materia2"],
+    "4º Semestre":["Materia1", "Materia2"],
+    "5º Semestre":["Materia1", "Materia2"],
+    "6º Semestre":["Materia1", "Materia2"]
+  },
+
+  "reffg": {
+    "Sigla":"TST",
+    "1º Semestre":["Materia1", "Materia2"],
+    "2º Semestre":["Materia1", "Materia2"],
+    "3º Semestre":["Materia1", "Materia2"],
+    "4º Semestre":["Materia1", "Materia2"],
+    "5º Semestre":["Materia1", "Materia2"],
+    "6º Semestre":["Materia1", "Materia2"]
+  },
+
+  "reffgg": {
+    "Sigla":"TST",
+    "1º Semestre":["Materia1", "Materia2"],
+    "2º Semestre":["Materia1", "Materia2"],
+    "3º Semestre":["Materia1", "Materia2"],
+    "4º Semestre":["Materia1", "Materia2"],
+    "5º Semestre":["Materia1", "Materia2"],
+    "6º Semestre":["Materia1", "Materia2"]
+  },
+
+  "reffggh": {
+    "Sigla":"TST",
+    "1º Semestre":["Materia1", "Materia2"],
+    "2º Semestre":["Materia1", "Materia2"],
+    "3º Semestre":["Materia1", "Materia2"],
+    "4º Semestre":["Materia1", "Materia2"],
+    "5º Semestre":["Materia1", "Materia2"],
+    "6º Semestre":["Materia1", "Materia2"]
+  },
+
+  "reffgghh": {
+    "Sigla":"TST",
+    "1º Semestre":["Materia1", "Materia2"],
+    "2º Semestre":["Materia1", "Materia2"],
+    "3º Semestre":["Materia1", "Materia2"],
+    "4º Semestre":["Materia1", "Materia2"],
+    "5º Semestre":["Materia1", "Materia2"],
+    "6º Semestre":["Materia1", "Materia2"]
+  },
+
+  "reffgghhj": {
+    "Sigla":"TST",
+    "1º Semestre":["Materia1", "Materia2"],
+    "2º Semestre":["Materia1", "Materia2"],
+    "3º Semestre":["Materia1", "Materia2"],
+    "4º Semestre":["Materia1", "Materia2"],
+    "5º Semestre":["Materia1", "Materia2"],
+    "6º Semestre":["Materia1", "Materia2"]
+  }
+}

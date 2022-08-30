@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <!-- <link rel="stylesheet" href="static/styles/home.css"> -->
+    <link rel="stylesheet" href="static/styles/global.css">
+    <link rel="stylesheet" href="static/styles/auth_window.css">
+    <!-- <link rel="shortcut icon" href="static/sources/images/global/g-place.ico" type="image/x-icon"> -->
+  </head>
+  <body>
+    <form action="/cadastro" method="post">
+      <div class="auth_css">
+        <div id="Dados1" class="auth_css"style="display: inherit;">
+          <h2>Dados cadastrais</h2>
+          <p>Nome completo: </p>
+          <input type="text" name="Nome" id="Nome" placeholder="Insira o Nome completo">
+          <p>Email: </p>
+          <input type="email" name="Email" id="Email" placeholder="Insira um email">
+          <p>Senha: </p>
+          <input type="password" name="Senha" id="Senha" placeholder="Insira uma senha">
+          <button type="button" onclick="Avanco_cadastro('Dados1', 'Dados2')">Avançar</button>
+          <h5 id="redirect_auth"> Já possui cadastro? <a href="/login">Faça login</a></h5>
+        </div>
+
+        <div id="Dados2"class="auth_css" style="display: none;">
+          <h2>Documentos</h2>
+          <p>RG: </p>
+          <input type="text" name="RG" id="RG" placeholder="Insira o RG">
+          <p>RA: </p>
+          <input type="text" name="RA" id="RA" placeholder="Insira o RA">
+          <p>CPF: </p>
+          <input type="text" name="CPF" id="CPF" placeholder="Insira o CPF">
+          <div>
+            <button type="button" onclick="Retorno_cadastro('Dados2', 'Dados1')">Retornar</button>
+            <button type="button" onclick="Avanco_cadastro('Dados2', 'Dados3')">Avançar</button>
+          </div>
+          <h5 id="redirect_auth"> Já possui cadastro? <a href="/login">Faça login</a></h5>
+        </div>
+
+        <div id="Dados3" class="auth_css" style="display: none;">
+          <h2>Sobre seu curso</h2>
+          <p>Curso: </p>
+          <input type="text" name="Curso" id="Curso" placeholder="Insira o curso">
+          <p>Ciclo: </p>
+          <input type="number" name="Ciclo" id="Ciclo" placeholder="Insira o ciclo">
+          <div>
+            <button type="button" onclick="Retorno_cadastro('Dados3', 'Dados2')">Retornar</button>
+            <input type="submit" name="Enviar" id="Enviar" value="Enviar">
+          </div>
+          <h5 id="redirect_auth"> Já possui cadastro? <a href="/login">Faça login</a></h5>
+        </div>
+      </div>
+    </form>
+
+    <script type="text/javascript">
+    // Talvez dê pra modificar o estilo de arquivo separado, utilizando também
+    // esse código JavaScript em um arquivo separado.
+      function Avanco_cadastro(id_atual, id_futura){
+        document.getElementById(id_atual).style.display = 'none';
+        document.getElementById(id_futura).style.display = 'inherit';
+      }
+      function Retorno_cadastro(id_atual, id_anterior){
+        document.getElementById(id_atual).style.display = 'none';
+        document.getElementById(id_anterior).style.display = 'inherit';
+      }
+    </script>
+  </body>
+</html>
