@@ -1,7 +1,8 @@
+/* Div que armazena as flex boxes com os horários, dias e aulas. */
 .container{
   display: flow-root;
   background-color: darkblue;
-  min-height: 100vh;
+  min-height: 80vh;
   width: 90vw;
   margin: auto;
   align-items: center;
@@ -10,18 +11,52 @@
   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
 }
 
-.hora_aula{
-  display: flex;
+.container_aulas_disponiveis{
+  /* visibility: hidden; */
+  display: flow-root;
+  background-color: lightblue;
+  min-height: 20vh;
+  width: 70vw;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+  position: relative;
+
+}
+
+
+
+.aula_disponivel{
+  display: inline-flex;
   background-color: blue;
   border-radius: 15px;
-  height: 6vh;
-  width: 15.3vw;
-  margin: 10px 11px 10px 11px;
+  height: 7vh;
+  width: 12.5vw;
+  margin: 3px 4px 10px 4px;
   border-color: skyblue;
   align-items: center;
   justify-content: center;
   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
 }
+
+.hora_aula{
+  display: flex;
+  background-color: blue;
+  border-radius: 15px;
+  height: 6.5vh;
+  width: 11.5vw;
+  margin: 3px 4px 10px 4px;
+  border-color: skyblue;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+/* Div que corresponde à primeira linha do horário (div "Horário" e dias da semana). */
+/* Armazena outras divs. */
+
 .titles{
   /* display: contents; */
   /* background-color: blue; */
@@ -38,40 +73,94 @@
   left: 1vw;
 }
 
+/*  Divs que contém os dias da semana. */
 .hora_aula.days{
   display: inline-flex;
   background-color: green;
   margin-top: 12px;
-  width: 9.9vw;
-
+  /* width: 11.5vw; */
 }
-/* separado pois o tamanho da primeira div é maior */
+
+/* Divs da primeira coluna, contém a hora de cada aula e intervalos. */
+.horarios{
+  margin: 3px 0px 13px 5px;
+}
+
+/* separado pois o tamanho da primeira coluna é maior */
 #periodo{
-  width: 17%;
+  width: 10.3;
   /* margin-top: 12px; */
 }
 
+/* Texto fora do horário, que apresenta o curso correspondente. */
 h1{
   margin-bottom: 25px;
 }
 
+/* Texto fora do horário, que apresenta o período do curso. */
+h1 #periodo_selecionado{
+  margin-bottom: 0px;
+}
+
+/* Div que armazena as colunas correspondentes ao horário das aulas/intervalos e */
+/* as aulas própriamente ditas. Não inclui o "Cabeçalho", com os dias da semana e */
+/* a div com o texto "Horário". */
 .container_columns{
   display:inline-flex;
   position: relative;
   left: 0.99vw;
 }
 
+/* Div das colunas individuais */
 .columns{
   display: flow-root;
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
+  width: min-content;
   margin-right: 3.6px;
 
 }
 
+/* Classe secundária, para divs que correspondem aos espaços de aula. */
 .disciplinas{
   display: inline-flex;
   background-color: crimson;
-  margin-top: 1px;
-  width: 9.9vw;
+  /* margin-top: 1px; */
+  width: 11.5vw;
 
+}
+
+/*  Classe secundária, para divs que correspondem aos horários de intervalos. */
+.intervalos{
+  display: inline-flex;
+  background-color: crimson;
+  /* margin-top: 1px; */
+  width: 11.5vw;
+
+}
+
+/*  Classe secundária, para divs que correspondem aos ao TG e Estágio. */
+.especiais{
+  display: inline-flex;
+  background-color: crimson;
+  /* margin-top: 1px; */
+  width: 11.5vw;
+
+}
+
+/* Classe para o texto dentro das divs de disciplinas */
+.disciplinas_texto{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content
+
+}
+
+/* Efeito nas divs de disciplinas e div especial, ao passar o mouse sobre elas. */
+.hora_aula.disciplinas:hover{
+  background-color: darkgoldenrod;
+}
+
+.hora_aula.especiais:hover{
+  background-color: green;
 }

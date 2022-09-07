@@ -20,13 +20,14 @@
 
   {% block main %}
   {{ super() }}
-  <h1>Grade horária - template</h1>
+  <h1>Grade horária - <a id="curso_selecionado" ,href="horario_curso/{{dados_curso['curso']}}">{{dados_curso['curso']}}</a></h1>
+  <h1>Período - <a id="periodo_selecionado" ,href=" ">{{dados_curso['periodo']}}</a></h1>
   <div class="container">
     <!-- Cabeçalho -->
     <div class="titles">
       <div class="hora_aula days" id="periodo">
         <!-- Alterar para deixar dinâmico depois -->
-        <p>Horário - Matutino</p>
+        <p>Horário</p>
       </div>
       <div class="hora_aula days" id="seg">
         <p>Segunda</p>
@@ -59,7 +60,7 @@
         {%if coluna == 0 %}
         <div class="columns">
           {% for horario in horarios %}
-          <div class="hora_aula">
+          <div class="hora_aula horarios">
             <p>{{horarios[horario]}}</p>
 
           </div>
@@ -67,46 +68,18 @@
         </div>
         {%else %}
         <div class="columns">
+          <!-- As Inserções de texto dinâmicas devem ficar escritas em uma linha só para não ficar com -->
+          <!-- espaço no HTML renderizado. -->
           {%for linha in range(8) %}
+            <div class="{%if linha == 2 or linha == 5 %}hora_aula intervalos{%else%}hora_aula disciplinas{%endif%}" id="{{coluna}}{{linha}}" onclick="irra('Design de Mídias Digitais', {{coluna}}{{linha}})" >
+              <div name="{%if coluna == 1%}Segunda{%elif coluna == 2%}Terça{%elif coluna == 3%}Quarta{%elif coluna == 4%}Quinta{%elif coluna == 5%}Sexta{%else%}Sábado{%endif%}"
+              id="{%if linha == 0 or linha == 1 %}{{horarios['Aula{}'.format(linha+1)]}}{%elif linha == 2 %}{{horarios['Intervalo1']}}{%elif linha == 3 or linha == 4 %}{{horarios['Aula{}'.format(linha)]}}{%elif linha == 5 %}{{horarios['Intervalo2']}}{%else%}{{horarios['Aula{}'.format(linha-1)]}}{%endif%}"
+              class="disciplinas_texto">
 
-            <div class="hora_aula disciplinas" id="{{coluna}}{{linha}}" onclick="troca_aula({{coluna}}{{linha}}, 'AOBA')" >
-              <div class="{%if coluna == 1%}seg{%elif coluna == 2%}ter{%elif coluna == 3%}quar{%elif coluna == 4%}quin{%elif coluna == 5%}sex{%else%}sab{%endif%}"
-              id="
-                   {%if linha == 0 or linha == 1 %}
-                   {{'Aula{}'.format(linha+1)}}
-
-                   {%elif linha == 2 %}
-                   {{horarios['Intervalo1']}}
-
-                   {%elif linha == 3 or linha == 4 %}
-                   {{'Aula{}'.format(linha)}}
-
-                   {%elif linha == 5 %}
-                   {{'Intervalo2'}}
-
-                   {%else%}
-                   {{'Aula{}'.format(linha-1)}}
-                   {%endif%}">
-
-                <!-- linha == 0 ou linha == 1 -->
-                     <!-- Aula1 e Aula2 -->
-                     {%if linha == 0 or linha == 1 %}
-                     {{horarios['Aula{}'.format(linha+1)]}}
-
-                <!--linha == 2  ou linha == 5-->
-                     <!-- Intervalo -->
-                     {%elif linha == 2 or linha == 5%}
+                     {%if linha == 2 or linha == 5%}
                      {{"Intervalo"}}
-
-                <!-- linha == 3 ou linha == 4 -->
-                     <!-- Aula3 e Aula4 -->
-                     {%elif linha == 3 or linha == 4 %}
-                     {{horarios['Aula{}'.format(linha)]}}
-
-                <!-- linha == 6 ou linha == 7 -->
-                     <!-- Aula5 e Aula6 -->
                      {%else%}
-                     {{horarios['Aula{}'.format(linha-1)]}}
+                     -
                      {%endif%}
               </div>
           </div>
@@ -115,8 +88,17 @@
       {%endif%}
       {%endfor%}
 
-
   </div>
+  <div class="hora_aula especiais" id= "materia_especial" onclick="irra('Design de Mídias Digitais', 'materia_especial')">
+    <div name="Especial" id="??h?? - ??h??">
+      -
+    </div>
+  </div>
+
+  <div class="container_aulas_disponiveis" id="container_aulas_disponiveis">
+    
+  </div>
+
 </div>
 
   {% endblock %}
