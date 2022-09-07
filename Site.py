@@ -347,10 +347,15 @@ def horario_curso_anon():
 @app.route('/horario_grade', methods = ['GET', 'POST'])
 #Exibir a grade horária do aluno, e as matérias que está matriculada
 def horario_grade():
+    dados_curso = {
+    "curso": "Design de Mídias digitais",
+    "periodo":"Matutino"
+
+    }
     with open('static\horarios.json', 'r', encoding = 'utf-8') as horarios_aula:
         horarios = json.load(horarios_aula)
-        print(cursos)
-    return render_template('horario_grade.html', horarios=horarios['horarios_matutino'])
+        print(horarios)
+    return render_template('horario_grade.html', dados_curso = dados_curso, horarios=horarios['horarios_matutino'])
     return 'Página não implementada ainda'
 
 #Verificação de professores na matéria
