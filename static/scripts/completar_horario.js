@@ -1,51 +1,32 @@
 
 
-function troca_aula(elementoPai, novo_valor, arquivo_json){
+function troca_aula(novo_valor, arquivo_json){
     dia_aula = arquivo_json[0]; //ex: ["Segunda", "Segunda", "Terça", "Terça"]
     horarios_materia = arquivo_json[1]; //ex: ["7h40 - 8h30", "8h30 - 9h20", "9h30 - 10h20", ...]
     cor = arquivo_json[2]; // ex: "#ffffff"
     abreviado = arquivo_json[3]; // ex: "Seg. no Des. de Aplic."
-    console.log(dia_aula);
-    console.log(horarios_materia);
-    console.log("Novo valor é: "+ novo_valor);
-    console.log("elementoPai: "+ elementoPai);
-    console.log("Abreviado é: "+ abreviado);
-
-    // elementoPai.style.background = cor;
-    // elementoPai.firstElementChild.innerText = novo_valor;
-    // // console.log(elementoPai.style.fontSize)
-    // if(novo_valor.length > 30){
-    //     elementoPai.firstElementChild.innerText = abreviado;
-    // }
 
     // Ver de chamar o relacionar_day aqui
       for (var i in dia_aula){
-          dia_valor = document.getElementsByName(dia_aula[i])[i]; // acha o dia
-          // console.log(dia_aula[dia]);
-          // console.log(dia_valor);
-          // for (var i = 0; i < horarios_materia.length; i++) {
-              // console.log(horarios_materia[i]);
-            console.log("Horário é: " + horarios_materia[i]);
-            outros_horario = document.getElementById(horarios_materia[i]);
-            outros_horario_name = outros_horario.getAttribute("name")
-            console.log("outros_horario_name: " + outros_horario_name);
-            if(outros_horario_name == dia_aula[i]){ // se o dia da div for o dia que está
-              // console.log(outros_horario)
-              outros_horario.parentNode.style.background = cor;
-              outros_horario.innerText = novo_valor;
-              // console.log(elementoPai.style.fontSize)
-              if(novo_valor.length > 30){
-                outros_horario.innerText = abreviado;
-              }
+          console.log(`Id: ${dia_aula[i]}]`);
+          console.log(`[Name: ${horarios_materia[i]}]`);
+          box_aula = document.querySelector(`[id='${dia_aula[i]}'][name='${horarios_materia[i]}']`);
+          console.log("Horário é: " + box_aula.getAttribute("name"));
+          console.log("Dia é: " + box_aula.getAttribute("id"));
+          box_aula.parentNode.style.background = cor;
+          box_aula.innerText = novo_valor;
+          if(novo_valor.length > 30){
+            box_aula.innerText = abreviado;
+          }
 
-            }
           // }
+
       }
 
 }
 
 // Criar uma janela popup que vai exibir as matérias disponiveis
-function Aulas_possiveis(elementoPai, id_caixa_aula) {
+function Aulas_possiveis() {
     is_container = document.getElementById("container_aulas_disponiveis");
     if (is_container) {
       is_container.style.background = 'green';
@@ -67,7 +48,7 @@ function add_aulas_possiveis(elementoPai, materia_valor, json_aulas, id_caixa_au
   aula_disponivel.setAttribute("class", "aula_disponivel");
   aula_disponivel.innerText = materia_valor
   // console.log(aula_disponivel.textContent)
-  aula_disponivel.addEventListener("click", function(){ troca_aula(elementoPai, materia_valor, json_aulas);} )
+  aula_disponivel.addEventListener("click", function(){ troca_aula(materia_valor, json_aulas);} )
   // aula_disponivel.onclick = function(){ troca_aula(elementoPai, aula_disponivel.textContent, json_aulas[3], json_aulas[2]);}
   container_aulas_disponiveis.appendChild(aula_disponivel)
 }
@@ -79,7 +60,7 @@ function irra(curso, id_caixa_aula){
     .then((response) => response.json())
     .then(function(json){
       var elementoPai = document.getElementById(id_caixa_aula);
-      Aulas_possiveis(elementoPai, id_caixa_aula)
+      Aulas_possiveis();
 
       function gerar_json(json){
         for (const [key, value] of Object.entries(json[curso])) {
@@ -92,8 +73,8 @@ function irra(curso, id_caixa_aula){
                 var json_dia = arquivo_json[0];
                 var json_horario = arquivo_json[1];
                 var json_cor = arquivo_json[2];
-                var dia_da_aula = elementoPai.firstElementChild.getAttribute("name"); // Será definido pela div
-                var horario_da_aula = elementoPai.firstElementChild.getAttribute("id"); // Será definido pela div
+                var dia_da_aula = elementoPai.firstElementChild.getAttribute("id"); // Será definido pela div
+                var horario_da_aula = elementoPai.firstElementChild.getAttribute("name"); // Será definido pela div
 
                 // talvez dar um return aqui e colocar a outra função em outra parte
 

@@ -72,8 +72,8 @@
           <!-- espaço no HTML renderizado. -->
           {%for linha in range(8) %}
             <div class="{%if linha == 2 or linha == 5 %}hora_aula intervalos{%else%}hora_aula disciplinas{%endif%}" id="{{coluna}}{{linha}}" onclick="irra('Design de Mídias Digitais', {{coluna}}{{linha}})" >
-              <div name="{%if coluna == 1%}Segunda{%elif coluna == 2%}Terça{%elif coluna == 3%}Quarta{%elif coluna == 4%}Quinta{%elif coluna == 5%}Sexta{%else%}Sábado{%endif%}"
-              id="{%if linha == 0 or linha == 1 %}{{horarios['Aula{}'.format(linha+1)]}}{%elif linha == 2 %}{{horarios['Intervalo1']}}{%elif linha == 3 or linha == 4 %}{{horarios['Aula{}'.format(linha)]}}{%elif linha == 5 %}{{horarios['Intervalo2']}}{%else%}{{horarios['Aula{}'.format(linha-1)]}}{%endif%}"
+              <div id="{%if coluna == 1%}Segunda{%elif coluna == 2%}Terça{%elif coluna == 3%}Quarta{%elif coluna == 4%}Quinta{%elif coluna == 5%}Sexta{%else%}Sábado{%endif%}"
+              name="{%if linha == 0 or linha == 1 %}{{horarios['Aula{}'.format(linha+1)]}}{%elif linha == 2 %}{{horarios['Intervalo1']}}{%elif linha == 3 or linha == 4 %}{{horarios['Aula{}'.format(linha)]}}{%elif linha == 5 %}{{horarios['Intervalo2']}}{%else%}{{horarios['Aula{}'.format(linha-1)]}}{%endif%}"
               class="disciplinas_texto">
 
                      {%if linha == 2 or linha == 5%}
@@ -89,14 +89,18 @@
       {%endfor%}
 
   </div>
-  <div class="hora_aula especiais" id= "materia_especial" onclick="irra('Design de Mídias Digitais', 'materia_especial')">
-    <div name="Especial" id="??h?? - ??h??">
-      -
-    </div>
+  <div class="container_especiais">
+    {%for index in range(3) %}
+    <span class="hora_aula especiais" id= "materia_especial{{index}}" onclick="irra('Design de Mídias Digitais', 'materia_especial{{index}}')">
+      <div id="Especial" name="??h?? - ??h??">
+        -
+      </div>
+    </span>
+   {%endfor%}
   </div>
 
   <div class="container_aulas_disponiveis" id="container_aulas_disponiveis">
-    
+
   </div>
 
 </div>

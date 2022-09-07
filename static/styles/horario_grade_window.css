@@ -156,6 +156,18 @@ h1 #periodo_selecionado{
 
 }
 
+.container_especiais{
+  display: grid;
+  background-color: yellowgreen;
+  border-radius: 15px;
+  height: 26vh;
+  width: 95%;
+  position: relative;
+  left: 2vw;
+
+}
+
+
 /* Efeito nas divs de disciplinas e div especial, ao passar o mouse sobre elas. */
 .hora_aula.disciplinas:hover{
   background-color: darkgoldenrod;
