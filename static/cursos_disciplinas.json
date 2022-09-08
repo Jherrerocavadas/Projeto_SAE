@@ -3,60 +3,61 @@
     "Sigla": "DMD",
     "Periodo":"Matutino",
     "1º Semestre":{
-      "Matemática Discreta":[["Segunda", "Segunda", "Segunda", "Segunda"], ["7h40 - 8h30", "8h30 - 9h20", "9h30 - 10h20", "10h20 - 11h10"],"#FFE92E"],
+      "Matemática Discreta":[["Segunda", "Segunda", "Segunda", "Segunda"], ["7h40 - 8h30", "8h30 - 9h20", "9h30 - 10h20", "10h20 - 11h10"],"#FFE92E", "Matemática Discreta"],
       "Tecnologia da Informação e Comunicação":[["Segunda", "Segunda"], ["11h20 - 12h10","12h10 - 13h00"],"#1AAB00", "TIC"],
-      "Administração Geral":[["Terça", "Terça", "Terça", "Terça"], ["7h40 - 8h30", "8h30 - 9h20", "9h30 - 10h20", "10h20 - 11h10"],"#33C1DD"],
+      "Administração Geral":[["Terça", "Terça", "Terça", "Terça"], ["7h40 - 8h30", "8h30 - 9h20", "9h30 - 10h20", "10h20 - 11h10"],"#33C1DD", "Administração Geral"],
       "Ingles I":[["Terça", "Terça"], ["11h20 - 12h10",  "12h10 - 13h00"],"#FF6A2E", "Ingles I"],
-      "Princípios de Marketing": [["Quarta","Quarta", "Quarta","Quarta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#770578", "Princípios de Marketing"],
+      "Princípios de Marketing": [["Quarta","Quarta", "Quarta","Quarta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#770578", "Princ. de Marketing"],
       "Interpretação e Produção de textos":[["Quinta", "Quinta","Quinta", "Quinta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#99C8CF", "Int. e Prod. de Textos"],
       "Técnicas de Apresentação de Portfólio":[["Sexta", "Sexta", "Sexta", "Sexta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#AB99CF", "TAP"]
     },
     "2º Semestre":{
-      "Pesquisa Mercadológica":[["Segunda", "Segunda", "Segunda", "Segunda"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#33C1DD"],
-      "Estatística":[["Segunda", "Segunda", "Quarta", "Quarta"], ["7h40 - 8h30", "8h30 - 9h20", "9h30 - 10h20", "10h20 - 11h10"],"#FFE92E"],
+      "Pesquisa Mercadológica":[["Segunda", "Segunda", "Segunda", "Segunda"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#33C1DD","Pesq. Mercadológica"],
+      "Estatística":[["Segunda", "Segunda", "Quarta", "Quarta"], ["7h40 - 8h30", "8h30 - 9h20", "9h30 - 10h20", "10h20 - 11h10"],"#FFE92E","Estatística"],
       "Metodologia de Pesquisa Científico-Tecnológica":[["Terça", "Terça"], ["7h40 - 8h30", "8h30 - 9h20"],"#4AEDDE", "Metod. Pesquisa"],
-      "Projeto Integrador I":[["Terça", "Terça", "Terça", "Terça"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#4AEDDE"],
+      "Projeto Integrador I":[["Terça", "Terça", "Terça", "Terça"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#4AEDDE","Projeto Integrador I"],
       "Ingles II":[["Quarta", "Quarta"], ["11h20 - 12h10", "12h10 - 13h00"],"#FF6A2E", "Ingles II"],
       "Algoritmo e Lógica de Programação":[["Quinta", "Quinta", "Quinta", "Quinta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#FFC051", "Alg. e Log. de Prog."],
-      "Gestão de Projetos":[["Sexta", "Sexta", "Sexta", "Sexta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#ff00ff"]
+      "Gestão de Projetos":[["Sexta", "Sexta", "Sexta", "Sexta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#ff00ff","Gestão de Projetos"]
     },
     "3º Semestre":{
       "Comunicação Visual":[["Segunda", "Segunda"], ["11h20 - 12h10","12h10 - 13h00"],"#1AAB00", "Comunicação Visual"],
       "Comunicação Interna":[["Terça", "Terça"], ["11h20 - 12h10","12h10 - 13h00"],"#1AAB00", "Comunicação Interna"],
-      "Direito Empresarial e do Consumidor":[["Sexta", "Sexta", "Sexta", "Sexta"], ["9h30 - 10h20", "10h20 - 11h10"],"#FCC814", "Direito Emp. e do Consum."],
-      "Banco de dados":[["Quinta", "Quinta", "Quinta", "Quinta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#007FAB"],
+      "Direito Empresarial e do Consumidor":[["Sexta", "Sexta", "Sexta", "Sexta"], ["9h30 - 10h20", "10h20 - 11h10"],"#FCC814", "Dir. Emp. e do Cons."],
+      "Banco de dados":[["Quinta", "Quinta", "Quinta", "Quinta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#007FAB", "Banco de dados"],
       "Ingles III":[["Terça", "Terça"], ["11h20 - 12h10",  "12h10 - 13h00"],"#FF6A2E", "Ingles III"],
-      "Plano de Marketing":[["Quinta", "Quinta", "Sexta", "Sexta"], ["7h40 - 8h30", "8h30 - 9h20", "7h40 - 8h30", "8h30 - 9h20"],"#770578"],
-      "Programação Orientada a Objetos":[["Terça", "Terça", "Terça", "Terça"], ["7h40 - 8h30", "8h30 - 9h20", "9h30 - 10h20", "10h20 - 11h10"],"#33C1DD"],
-      "Design Digital":[["Segunda", "Segunda", "Segunda", "Segunda"], ["7h40 - 8h30", "8h30 - 9h20", "9h30 - 10h20", "10h20 - 11h10"],"#33C1DD"]
+      "Plano de Marketing":[["Quinta", "Quinta", "Sexta", "Sexta"], ["7h40 - 8h30", "8h30 - 9h20", "7h40 - 8h30", "8h30 - 9h20"],"#770578", "Plano de Marketing"],
+      "Programação Orientada a Objetos":[["Terça", "Terça", "Terça", "Terça"], ["7h40 - 8h30", "8h30 - 9h20", "9h30 - 10h20", "10h20 - 11h10"],"#33C1DD","Prog. Orientada a Obj."],
+      "Design Digital":[["Segunda", "Segunda", "Segunda", "Segunda"], ["7h40 - 8h30", "8h30 - 9h20", "9h30 - 10h20", "10h20 - 11h10"],"#33C1DD","Design Digital"]
     },
     "4º Semestre":{
-      "Direito da Propriedade Intelectual":[["Sexta", "Sexta"], ["11h20 - 12h10", "12h10 - 13h00"],"#FCC814", "Direito de Prop. Intelectual"],
-      "Experiência de Usuário":[],
-      "Criação de Websites":[],
-      "Projeto Integrador II":[["Quinta", "Quinta"], ["11h20 - 12h10", "12h10 - 13h00"],"#FF6A2E"],
+      "Direito da Propriedade Intelectual":[["Sexta", "Sexta"], ["11h20 - 12h10", "12h10 - 13h00"],"#FCC814", "Dir. de Prop. Intel."],
+      "Experiência de Usuário":[["Segunda", "Segunda"], ["9h30 - 10h20", "10h20 - 11h10"],"#FF6A2E", "Exp. de Usuário"],
+      "Criação de Websites":[["Terça", "Terça"], ["9h30 - 10h20", "10h20 - 11h10"],"#FF6A2E", "Criação de Websites"],
+      "Projeto Integrador II":[["Quinta", "Quinta"], ["7h40 - 8h30", "8h30 - 9h20"],"#FF6A2E", "Projeto Integrador II"],
       "Ingles IV":[["Quarta", "Quarta"], ["11h20 - 12h10", "12h10 - 13h00"],"#FF6A2E", "Ingles IV"],
       "Programação para Ambientes Multimídia I":[["Quarta", "Quarta", "Quarta", "Quarta"], ["7h40 - 8h30", "8h30 - 9h20", "9h30 - 10h20", "10h20 - 11h10"],"#FCC814", "Prog. Multimídia I"],
-      "Marketing Digital":[["Quinta", "Quinta", "Quinta", "Quinta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#007FAB"]
+      "Marketing Digital":[["Quinta", "Quinta", "Quinta", "Quinta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#007FAB", "Marketing Digital"]
     },
     "5º Semestre":{
-      "Gestão de Marcas":[],
-      "Comunicação em Mídias Digitais":[],
+      "Gestão de Marcas":[["Terça", "Terça", "Terça", "Terça"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#FF6A2E", "Gestão de Marcas"],
+      "Comunicação em Mídias Digitais":[["Quarta", "Quarta", "Quarta", "Quarta"], ["7h40 - 8h30", "8h30 - 9h20", "11h20 - 12h10", "12h10 - 13h00"], "#FF6A2E", "Com. em Mid. Digitais"],
       "Programação para Ambientes Multimídia II":[["Sexta", "Sexta", "Sexta", "Sexta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#FCC814", "Prog. Multimídia II"],
       "Programação para Mobile I":[["Segunda", "Segunda", "Segunda", "Segunda"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#007FAB", "Prog. Mobile I"],
       "Ingles V":[["Quarta", "Quarta"], ["9h30 - 10h20", "10h20 - 11h10"],"#FF6A2E", "Ingles V"],
       "Segurança no Desenvolvimento de Aplicações":[["Segunda", "Segunda"], ["7h40 - 8h30", "8h30 - 9h20"],"#FCC814", "Seg. no Des. de Aplic."],
-      "Redes e Internet":[["Quinta", "Quinta","Quinta", "Quinta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#FCC814"],
+      "Redes e Internet":[["Quinta", "Quinta","Quinta", "Quinta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#FCC814", "Redes e Internet"],
       "Trabalho de Graduação em design de Mídias Digitais I":[["Especial"],["??h?? - ??h??"],"#FCC814", "TG 1"]
 
     },
     "6º Semestre":{
-      "Empreendedorismo e Inovação":[],
-      "Inteligência Artificial":[],
-      "Programação Mobile II":[],
-      "Ciência dos dados":[],
-      "Design Audiovisual":[],
-      "Tópicos Especiais em Sistemas de Mídias Digitais":[["Sexta", "Sexta", "Sexta", "Sexta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#FCC814", "Topicos Especiais para DMD"],
+      "Ingles VI":[["Segunda", "Segunda"], ["7h40 - 8h30", "8h30 - 9h20"],"#FF6A2E", "Ingles VI"],
+      "Design Audiovisual":[["Segunda", "Segunda", "Segunda", "Segunda"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#007FAB", "Design Audiovisual"],
+      "Inteligencia Artificial":[["Terça", "Terça"], ["7h40 - 8h30", "8h30 - 9h20"],"#FF6A2E", "Inteligência Artificial"],
+      "Empreendedorismo e Inovação":[["Terça", "Terça", "Terça", "Terça"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#FF6A2E", "Emp. e Inovação"],
+      "Ciência dos dados":[["Quarta", "Quarta", "Quarta", "Quarta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#007FAB", "Ciência de dados"],
+      "Programação Mobile II":[["Quinta", "Quinta", "Quinta", "Quinta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#007FAB", "Prog. Mobile II"],
+      "Tópicos Especiais em Sistemas de Mídias Digitais":[["Sexta", "Sexta", "Sexta", "Sexta"], ["9h30 - 10h20", "10h20 - 11h10", "11h20 - 12h10", "12h10 - 13h00"],"#FCC814", "Top. Esp. para DMD"],
       "Estágio Supervisionado em Design de Mídias Digitais":[["Especial"],["??h?? - ??h??"],"#FCC814", "Estágio"],
       "Trabalho de Graduação em design de Mídias Digitais II":[["Especial"],["??h?? - ??h??"],"#FCC814", "TG 2"]
     }
